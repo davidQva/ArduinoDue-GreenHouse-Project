@@ -1,0 +1,153 @@
+##IAR Ninja build file
+
+
+#Rules
+rule COMPILER_XCL
+  command = C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\common\bin\XclFileGenerator.exe $xclcommand -f "$rspfile_name"
+  description = IAR_NEW_TOOL+++COMPILER_XCL+++$in+++"C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\common\bin\XclFileGenerator.exe" $flags
+  rspfile = $rspfile_name
+  rspfile_content = $flags
+
+rule INDEXER
+  command = C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\common\bin\SourceIndexer.exe $flags
+  depfile = $out.dep
+  description = IAR_NEW_TOOL+++INDEXER+++$out+++"C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\common\bin\SourceIndexer.exe" $flags
+
+rule MAKEBROWSE
+  command = C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\common\bin\makeBrowseData.exe $flags
+  description = IAR_NEW_TOOL+++MAKEBROWSE+++$out+++"C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\common\bin\makeBrowseData.exe" $flags
+
+rule PDBLINK
+  command = C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\common\bin\PbdLink.exe $flags
+  description = IAR_NEW_TOOL+++PDBLINK+++$out+++"C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\common\bin\PbdLink.exe" $flags
+
+
+
+#Build steps
+build C$:\Users\Sandyoho\OneDrive\Skrivbord\Project_Greenhouse\Project_Greenhouse\Project_Greenhouse\Debug\BrowseInfo\config.xcl : COMPILER_XCL 
+  xclcommand = -source_file C$:\Users\Sandyoho\OneDrive\Skrivbord\Project_Greenhouse\Project_Greenhouse\Project_Greenhouse\config.c -xcl_file C$:\Users\Sandyoho\OneDrive\Skrivbord\Project_Greenhouse\Project_Greenhouse\Project_Greenhouse\Debug\BrowseInfo\config.xcl -macro_file C$:\Users\Sandyoho\OneDrive\Skrivbord\Project_Greenhouse\Project_Greenhouse\Project_Greenhouse\Debug\BrowseInfo\config.tmp -icc_path "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\bin\iccarm.exe"
+  flags = C$:\Users\Sandyoho\OneDrive\Skrivbord\Project_Greenhouse\Project_Greenhouse\Project_Greenhouse\config.c -o C$:\Users\Sandyoho\OneDrive\Skrivbord\Project_Greenhouse\Project_Greenhouse\Project_Greenhouse\Debug\Obj\ --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling --debug --endian=little --cpu=Cortex-M3 -e --fpu=None --dlib_config "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\inc\c\DLib_Config_Normal.h" -Ol --predef_macros C$:\Users\Sandyoho\OneDrive\Skrivbord\Project_Greenhouse\Project_Greenhouse\Project_Greenhouse\Debug\BrowseInfo\config.tmp
+  rspfile_name = C$:\Users\Sandyoho\OneDrive\Skrivbord\Project_Greenhouse\Project_Greenhouse\Project_Greenhouse\Debug\BrowseInfo\config.xcl.rsp
+
+build C$:\Users\Sandyoho\OneDrive\Skrivbord\Project_Greenhouse\Project_Greenhouse\Project_Greenhouse\Debug\BrowseInfo\datetime.xcl : COMPILER_XCL 
+  xclcommand = -source_file C$:\Users\Sandyoho\OneDrive\Skrivbord\Project_Greenhouse\Project_Greenhouse\Project_Greenhouse\datetime.c -xcl_file C$:\Users\Sandyoho\OneDrive\Skrivbord\Project_Greenhouse\Project_Greenhouse\Project_Greenhouse\Debug\BrowseInfo\datetime.xcl -macro_file C$:\Users\Sandyoho\OneDrive\Skrivbord\Project_Greenhouse\Project_Greenhouse\Project_Greenhouse\Debug\BrowseInfo\datetime.tmp -icc_path "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\bin\iccarm.exe"
+  flags = C$:\Users\Sandyoho\OneDrive\Skrivbord\Project_Greenhouse\Project_Greenhouse\Project_Greenhouse\datetime.c -o C$:\Users\Sandyoho\OneDrive\Skrivbord\Project_Greenhouse\Project_Greenhouse\Project_Greenhouse\Debug\Obj\ --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling --debug --endian=little --cpu=Cortex-M3 -e --fpu=None --dlib_config "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\inc\c\DLib_Config_Normal.h" -Ol --predef_macros C$:\Users\Sandyoho\OneDrive\Skrivbord\Project_Greenhouse\Project_Greenhouse\Project_Greenhouse\Debug\BrowseInfo\datetime.tmp
+  rspfile_name = C$:\Users\Sandyoho\OneDrive\Skrivbord\Project_Greenhouse\Project_Greenhouse\Project_Greenhouse\Debug\BrowseInfo\datetime.xcl.rsp
+
+build C$:\Users\Sandyoho\OneDrive\Skrivbord\Project_Greenhouse\Project_Greenhouse\Project_Greenhouse\Debug\BrowseInfo\display.xcl : COMPILER_XCL 
+  xclcommand = -source_file C$:\Users\Sandyoho\OneDrive\Skrivbord\Project_Greenhouse\Project_Greenhouse\Project_Greenhouse\display.c -xcl_file C$:\Users\Sandyoho\OneDrive\Skrivbord\Project_Greenhouse\Project_Greenhouse\Project_Greenhouse\Debug\BrowseInfo\display.xcl -macro_file C$:\Users\Sandyoho\OneDrive\Skrivbord\Project_Greenhouse\Project_Greenhouse\Project_Greenhouse\Debug\BrowseInfo\display.tmp -icc_path "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\bin\iccarm.exe"
+  flags = C$:\Users\Sandyoho\OneDrive\Skrivbord\Project_Greenhouse\Project_Greenhouse\Project_Greenhouse\display.c -o C$:\Users\Sandyoho\OneDrive\Skrivbord\Project_Greenhouse\Project_Greenhouse\Project_Greenhouse\Debug\Obj\ --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling --debug --endian=little --cpu=Cortex-M3 -e --fpu=None --dlib_config "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\inc\c\DLib_Config_Normal.h" -Ol --predef_macros C$:\Users\Sandyoho\OneDrive\Skrivbord\Project_Greenhouse\Project_Greenhouse\Project_Greenhouse\Debug\BrowseInfo\display.tmp
+  rspfile_name = C$:\Users\Sandyoho\OneDrive\Skrivbord\Project_Greenhouse\Project_Greenhouse\Project_Greenhouse\Debug\BrowseInfo\display.xcl.rsp
+
+build C$:\Users\Sandyoho\OneDrive\Skrivbord\Project_Greenhouse\Project_Greenhouse\Project_Greenhouse\Debug\BrowseInfo\exceptions.xcl : COMPILER_XCL 
+  xclcommand = -source_file C$:\Users\Sandyoho\OneDrive\Skrivbord\Project_Greenhouse\Project_Greenhouse\Project_Greenhouse\exceptions.c -xcl_file C$:\Users\Sandyoho\OneDrive\Skrivbord\Project_Greenhouse\Project_Greenhouse\Project_Greenhouse\Debug\BrowseInfo\exceptions.xcl -macro_file C$:\Users\Sandyoho\OneDrive\Skrivbord\Project_Greenhouse\Project_Greenhouse\Project_Greenhouse\Debug\BrowseInfo\exceptions.tmp -icc_path "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\bin\iccarm.exe"
+  flags = C$:\Users\Sandyoho\OneDrive\Skrivbord\Project_Greenhouse\Project_Greenhouse\Project_Greenhouse\exceptions.c -o C$:\Users\Sandyoho\OneDrive\Skrivbord\Project_Greenhouse\Project_Greenhouse\Project_Greenhouse\Debug\Obj\ --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling --debug --endian=little --cpu=Cortex-M3 -e --fpu=None --dlib_config "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\inc\c\DLib_Config_Normal.h" -Ol --predef_macros C$:\Users\Sandyoho\OneDrive\Skrivbord\Project_Greenhouse\Project_Greenhouse\Project_Greenhouse\Debug\BrowseInfo\exceptions.tmp
+  rspfile_name = C$:\Users\Sandyoho\OneDrive\Skrivbord\Project_Greenhouse\Project_Greenhouse\Project_Greenhouse\Debug\BrowseInfo\exceptions.xcl.rsp
+
+build C$:\Users\Sandyoho\OneDrive\Skrivbord\Project_Greenhouse\Project_Greenhouse\Project_Greenhouse\Debug\BrowseInfo\handlers.xcl : COMPILER_XCL 
+  xclcommand = -source_file C$:\Users\Sandyoho\OneDrive\Skrivbord\Project_Greenhouse\Project_Greenhouse\Project_Greenhouse\handlers.c -xcl_file C$:\Users\Sandyoho\OneDrive\Skrivbord\Project_Greenhouse\Project_Greenhouse\Project_Greenhouse\Debug\BrowseInfo\handlers.xcl -macro_file C$:\Users\Sandyoho\OneDrive\Skrivbord\Project_Greenhouse\Project_Greenhouse\Project_Greenhouse\Debug\BrowseInfo\handlers.tmp -icc_path "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\bin\iccarm.exe"
+  flags = C$:\Users\Sandyoho\OneDrive\Skrivbord\Project_Greenhouse\Project_Greenhouse\Project_Greenhouse\handlers.c -o C$:\Users\Sandyoho\OneDrive\Skrivbord\Project_Greenhouse\Project_Greenhouse\Project_Greenhouse\Debug\Obj\ --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling --debug --endian=little --cpu=Cortex-M3 -e --fpu=None --dlib_config "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\inc\c\DLib_Config_Normal.h" -Ol --predef_macros C$:\Users\Sandyoho\OneDrive\Skrivbord\Project_Greenhouse\Project_Greenhouse\Project_Greenhouse\Debug\BrowseInfo\handlers.tmp
+  rspfile_name = C$:\Users\Sandyoho\OneDrive\Skrivbord\Project_Greenhouse\Project_Greenhouse\Project_Greenhouse\Debug\BrowseInfo\handlers.xcl.rsp
+
+build C$:\Users\Sandyoho\OneDrive\Skrivbord\Project_Greenhouse\Project_Greenhouse\Project_Greenhouse\Debug\BrowseInfo\keypad.xcl : COMPILER_XCL 
+  xclcommand = -source_file C$:\Users\Sandyoho\OneDrive\Skrivbord\Project_Greenhouse\Project_Greenhouse\Project_Greenhouse\keypad.c -xcl_file C$:\Users\Sandyoho\OneDrive\Skrivbord\Project_Greenhouse\Project_Greenhouse\Project_Greenhouse\Debug\BrowseInfo\keypad.xcl -macro_file C$:\Users\Sandyoho\OneDrive\Skrivbord\Project_Greenhouse\Project_Greenhouse\Project_Greenhouse\Debug\BrowseInfo\keypad.tmp -icc_path "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\bin\iccarm.exe"
+  flags = C$:\Users\Sandyoho\OneDrive\Skrivbord\Project_Greenhouse\Project_Greenhouse\Project_Greenhouse\keypad.c -o C$:\Users\Sandyoho\OneDrive\Skrivbord\Project_Greenhouse\Project_Greenhouse\Project_Greenhouse\Debug\Obj\ --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling --debug --endian=little --cpu=Cortex-M3 -e --fpu=None --dlib_config "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\inc\c\DLib_Config_Normal.h" -Ol --predef_macros C$:\Users\Sandyoho\OneDrive\Skrivbord\Project_Greenhouse\Project_Greenhouse\Project_Greenhouse\Debug\BrowseInfo\keypad.tmp
+  rspfile_name = C$:\Users\Sandyoho\OneDrive\Skrivbord\Project_Greenhouse\Project_Greenhouse\Project_Greenhouse\Debug\BrowseInfo\keypad.xcl.rsp
+
+build C$:\Users\Sandyoho\OneDrive\Skrivbord\Project_Greenhouse\Project_Greenhouse\Project_Greenhouse\Debug\BrowseInfo\main.xcl : COMPILER_XCL 
+  xclcommand = -source_file C$:\Users\Sandyoho\OneDrive\Skrivbord\Project_Greenhouse\Project_Greenhouse\Project_Greenhouse\main.c -xcl_file C$:\Users\Sandyoho\OneDrive\Skrivbord\Project_Greenhouse\Project_Greenhouse\Project_Greenhouse\Debug\BrowseInfo\main.xcl -macro_file C$:\Users\Sandyoho\OneDrive\Skrivbord\Project_Greenhouse\Project_Greenhouse\Project_Greenhouse\Debug\BrowseInfo\main.tmp -icc_path "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\bin\iccarm.exe"
+  flags = C$:\Users\Sandyoho\OneDrive\Skrivbord\Project_Greenhouse\Project_Greenhouse\Project_Greenhouse\main.c -o C$:\Users\Sandyoho\OneDrive\Skrivbord\Project_Greenhouse\Project_Greenhouse\Project_Greenhouse\Debug\Obj\ --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling --debug --endian=little --cpu=Cortex-M3 -e --fpu=None --dlib_config "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\inc\c\DLib_Config_Normal.h" -Ol --predef_macros C$:\Users\Sandyoho\OneDrive\Skrivbord\Project_Greenhouse\Project_Greenhouse\Project_Greenhouse\Debug\BrowseInfo\main.tmp
+  rspfile_name = C$:\Users\Sandyoho\OneDrive\Skrivbord\Project_Greenhouse\Project_Greenhouse\Project_Greenhouse\Debug\BrowseInfo\main.xcl.rsp
+
+build C$:\Users\Sandyoho\OneDrive\Skrivbord\Project_Greenhouse\Project_Greenhouse\Project_Greenhouse\Debug\BrowseInfo\menu.xcl : COMPILER_XCL 
+  xclcommand = -source_file C$:\Users\Sandyoho\OneDrive\Skrivbord\Project_Greenhouse\Project_Greenhouse\Project_Greenhouse\menu.c -xcl_file C$:\Users\Sandyoho\OneDrive\Skrivbord\Project_Greenhouse\Project_Greenhouse\Project_Greenhouse\Debug\BrowseInfo\menu.xcl -macro_file C$:\Users\Sandyoho\OneDrive\Skrivbord\Project_Greenhouse\Project_Greenhouse\Project_Greenhouse\Debug\BrowseInfo\menu.tmp -icc_path "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\bin\iccarm.exe"
+  flags = C$:\Users\Sandyoho\OneDrive\Skrivbord\Project_Greenhouse\Project_Greenhouse\Project_Greenhouse\menu.c -o C$:\Users\Sandyoho\OneDrive\Skrivbord\Project_Greenhouse\Project_Greenhouse\Project_Greenhouse\Debug\Obj\ --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling --debug --endian=little --cpu=Cortex-M3 -e --fpu=None --dlib_config "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\inc\c\DLib_Config_Normal.h" -Ol --predef_macros C$:\Users\Sandyoho\OneDrive\Skrivbord\Project_Greenhouse\Project_Greenhouse\Project_Greenhouse\Debug\BrowseInfo\menu.tmp
+  rspfile_name = C$:\Users\Sandyoho\OneDrive\Skrivbord\Project_Greenhouse\Project_Greenhouse\Project_Greenhouse\Debug\BrowseInfo\menu.xcl.rsp
+
+build C$:\Users\Sandyoho\OneDrive\Skrivbord\Project_Greenhouse\Project_Greenhouse\Project_Greenhouse\Debug\BrowseInfo\sensor.xcl : COMPILER_XCL 
+  xclcommand = -source_file C$:\Users\Sandyoho\OneDrive\Skrivbord\Project_Greenhouse\Project_Greenhouse\Project_Greenhouse\sensor.c -xcl_file C$:\Users\Sandyoho\OneDrive\Skrivbord\Project_Greenhouse\Project_Greenhouse\Project_Greenhouse\Debug\BrowseInfo\sensor.xcl -macro_file C$:\Users\Sandyoho\OneDrive\Skrivbord\Project_Greenhouse\Project_Greenhouse\Project_Greenhouse\Debug\BrowseInfo\sensor.tmp -icc_path "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\bin\iccarm.exe"
+  flags = C$:\Users\Sandyoho\OneDrive\Skrivbord\Project_Greenhouse\Project_Greenhouse\Project_Greenhouse\sensor.c -o C$:\Users\Sandyoho\OneDrive\Skrivbord\Project_Greenhouse\Project_Greenhouse\Project_Greenhouse\Debug\Obj\ --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling --debug --endian=little --cpu=Cortex-M3 -e --fpu=None --dlib_config "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\inc\c\DLib_Config_Normal.h" -Ol --predef_macros C$:\Users\Sandyoho\OneDrive\Skrivbord\Project_Greenhouse\Project_Greenhouse\Project_Greenhouse\Debug\BrowseInfo\sensor.tmp
+  rspfile_name = C$:\Users\Sandyoho\OneDrive\Skrivbord\Project_Greenhouse\Project_Greenhouse\Project_Greenhouse\Debug\BrowseInfo\sensor.xcl.rsp
+
+build C$:\Users\Sandyoho\OneDrive\Skrivbord\Project_Greenhouse\Project_Greenhouse\Project_Greenhouse\Debug\BrowseInfo\startup_sam3x.xcl : COMPILER_XCL 
+  xclcommand = -source_file C$:\Users\Sandyoho\OneDrive\Skrivbord\Project_Greenhouse\Project_Greenhouse\Project_Greenhouse\startup_sam3x.c -xcl_file C$:\Users\Sandyoho\OneDrive\Skrivbord\Project_Greenhouse\Project_Greenhouse\Project_Greenhouse\Debug\BrowseInfo\startup_sam3x.xcl -macro_file C$:\Users\Sandyoho\OneDrive\Skrivbord\Project_Greenhouse\Project_Greenhouse\Project_Greenhouse\Debug\BrowseInfo\startup_sam3x.tmp -icc_path "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\bin\iccarm.exe"
+  flags = C$:\Users\Sandyoho\OneDrive\Skrivbord\Project_Greenhouse\Project_Greenhouse\Project_Greenhouse\startup_sam3x.c -o C$:\Users\Sandyoho\OneDrive\Skrivbord\Project_Greenhouse\Project_Greenhouse\Project_Greenhouse\Debug\Obj\ --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling --debug --endian=little --cpu=Cortex-M3 -e --fpu=None --dlib_config "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\inc\c\DLib_Config_Normal.h" -Ol --predef_macros C$:\Users\Sandyoho\OneDrive\Skrivbord\Project_Greenhouse\Project_Greenhouse\Project_Greenhouse\Debug\BrowseInfo\startup_sam3x.tmp
+  rspfile_name = C$:\Users\Sandyoho\OneDrive\Skrivbord\Project_Greenhouse\Project_Greenhouse\Project_Greenhouse\Debug\BrowseInfo\startup_sam3x.xcl.rsp
+
+build C$:\Users\Sandyoho\OneDrive\Skrivbord\Project_Greenhouse\Project_Greenhouse\Project_Greenhouse\Debug\BrowseInfo\system_sam3x.xcl : COMPILER_XCL 
+  xclcommand = -source_file C$:\Users\Sandyoho\OneDrive\Skrivbord\Project_Greenhouse\Project_Greenhouse\Project_Greenhouse\system_sam3x.c -xcl_file C$:\Users\Sandyoho\OneDrive\Skrivbord\Project_Greenhouse\Project_Greenhouse\Project_Greenhouse\Debug\BrowseInfo\system_sam3x.xcl -macro_file C$:\Users\Sandyoho\OneDrive\Skrivbord\Project_Greenhouse\Project_Greenhouse\Project_Greenhouse\Debug\BrowseInfo\system_sam3x.tmp -icc_path "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\bin\iccarm.exe"
+  flags = C$:\Users\Sandyoho\OneDrive\Skrivbord\Project_Greenhouse\Project_Greenhouse\Project_Greenhouse\system_sam3x.c -o C$:\Users\Sandyoho\OneDrive\Skrivbord\Project_Greenhouse\Project_Greenhouse\Project_Greenhouse\Debug\Obj\ --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling --debug --endian=little --cpu=Cortex-M3 -e --fpu=None --dlib_config "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\inc\c\DLib_Config_Normal.h" -Ol --predef_macros C$:\Users\Sandyoho\OneDrive\Skrivbord\Project_Greenhouse\Project_Greenhouse\Project_Greenhouse\Debug\BrowseInfo\system_sam3x.tmp
+  rspfile_name = C$:\Users\Sandyoho\OneDrive\Skrivbord\Project_Greenhouse\Project_Greenhouse\Project_Greenhouse\Debug\BrowseInfo\system_sam3x.xcl.rsp
+
+build C$:\Users\Sandyoho\OneDrive\Skrivbord\Project_Greenhouse\Project_Greenhouse\Project_Greenhouse\Debug\BrowseInfo\config.pbi : INDEXER C$:\Users\Sandyoho\OneDrive\Skrivbord\Project_Greenhouse\Project_Greenhouse\Project_Greenhouse\Debug\BrowseInfo\config.xcl |  $
+C$:\Users\Sandyoho\OneDrive\Skrivbord\Project_Greenhouse\Project_Greenhouse\Project_Greenhouse\config.c
+  flags = -out=C$:\Users\Sandyoho\OneDrive\Skrivbord\Project_Greenhouse\Project_Greenhouse\Project_Greenhouse\Debug\BrowseInfo\config.pbi -f C$:\Users\Sandyoho\OneDrive\Skrivbord\Project_Greenhouse\Project_Greenhouse\Project_Greenhouse\Debug\BrowseInfo\config.xcl
+
+build C$:\Users\Sandyoho\OneDrive\Skrivbord\Project_Greenhouse\Project_Greenhouse\Project_Greenhouse\Debug\BrowseInfo\datetime.pbi : INDEXER C$:\Users\Sandyoho\OneDrive\Skrivbord\Project_Greenhouse\Project_Greenhouse\Project_Greenhouse\Debug\BrowseInfo\datetime.xcl |  $
+C$:\Users\Sandyoho\OneDrive\Skrivbord\Project_Greenhouse\Project_Greenhouse\Project_Greenhouse\datetime.c
+  flags = -out=C$:\Users\Sandyoho\OneDrive\Skrivbord\Project_Greenhouse\Project_Greenhouse\Project_Greenhouse\Debug\BrowseInfo\datetime.pbi -f C$:\Users\Sandyoho\OneDrive\Skrivbord\Project_Greenhouse\Project_Greenhouse\Project_Greenhouse\Debug\BrowseInfo\datetime.xcl
+
+build C$:\Users\Sandyoho\OneDrive\Skrivbord\Project_Greenhouse\Project_Greenhouse\Project_Greenhouse\Debug\BrowseInfo\display.pbi : INDEXER C$:\Users\Sandyoho\OneDrive\Skrivbord\Project_Greenhouse\Project_Greenhouse\Project_Greenhouse\Debug\BrowseInfo\display.xcl |  $
+C$:\Users\Sandyoho\OneDrive\Skrivbord\Project_Greenhouse\Project_Greenhouse\Project_Greenhouse\display.c
+  flags = -out=C$:\Users\Sandyoho\OneDrive\Skrivbord\Project_Greenhouse\Project_Greenhouse\Project_Greenhouse\Debug\BrowseInfo\display.pbi -f C$:\Users\Sandyoho\OneDrive\Skrivbord\Project_Greenhouse\Project_Greenhouse\Project_Greenhouse\Debug\BrowseInfo\display.xcl
+
+build C$:\Users\Sandyoho\OneDrive\Skrivbord\Project_Greenhouse\Project_Greenhouse\Project_Greenhouse\Debug\BrowseInfo\exceptions.pbi : INDEXER C$:\Users\Sandyoho\OneDrive\Skrivbord\Project_Greenhouse\Project_Greenhouse\Project_Greenhouse\Debug\BrowseInfo\exceptions.xcl |  $
+C$:\Users\Sandyoho\OneDrive\Skrivbord\Project_Greenhouse\Project_Greenhouse\Project_Greenhouse\exceptions.c
+  flags = -out=C$:\Users\Sandyoho\OneDrive\Skrivbord\Project_Greenhouse\Project_Greenhouse\Project_Greenhouse\Debug\BrowseInfo\exceptions.pbi -f C$:\Users\Sandyoho\OneDrive\Skrivbord\Project_Greenhouse\Project_Greenhouse\Project_Greenhouse\Debug\BrowseInfo\exceptions.xcl
+
+build C$:\Users\Sandyoho\OneDrive\Skrivbord\Project_Greenhouse\Project_Greenhouse\Project_Greenhouse\Debug\BrowseInfo\handlers.pbi : INDEXER C$:\Users\Sandyoho\OneDrive\Skrivbord\Project_Greenhouse\Project_Greenhouse\Project_Greenhouse\Debug\BrowseInfo\handlers.xcl |  $
+C$:\Users\Sandyoho\OneDrive\Skrivbord\Project_Greenhouse\Project_Greenhouse\Project_Greenhouse\handlers.c
+  flags = -out=C$:\Users\Sandyoho\OneDrive\Skrivbord\Project_Greenhouse\Project_Greenhouse\Project_Greenhouse\Debug\BrowseInfo\handlers.pbi -f C$:\Users\Sandyoho\OneDrive\Skrivbord\Project_Greenhouse\Project_Greenhouse\Project_Greenhouse\Debug\BrowseInfo\handlers.xcl
+
+build C$:\Users\Sandyoho\OneDrive\Skrivbord\Project_Greenhouse\Project_Greenhouse\Project_Greenhouse\Debug\BrowseInfo\keypad.pbi : INDEXER C$:\Users\Sandyoho\OneDrive\Skrivbord\Project_Greenhouse\Project_Greenhouse\Project_Greenhouse\Debug\BrowseInfo\keypad.xcl |  $
+C$:\Users\Sandyoho\OneDrive\Skrivbord\Project_Greenhouse\Project_Greenhouse\Project_Greenhouse\keypad.c
+  flags = -out=C$:\Users\Sandyoho\OneDrive\Skrivbord\Project_Greenhouse\Project_Greenhouse\Project_Greenhouse\Debug\BrowseInfo\keypad.pbi -f C$:\Users\Sandyoho\OneDrive\Skrivbord\Project_Greenhouse\Project_Greenhouse\Project_Greenhouse\Debug\BrowseInfo\keypad.xcl
+
+build C$:\Users\Sandyoho\OneDrive\Skrivbord\Project_Greenhouse\Project_Greenhouse\Project_Greenhouse\Debug\BrowseInfo\main.pbi : INDEXER C$:\Users\Sandyoho\OneDrive\Skrivbord\Project_Greenhouse\Project_Greenhouse\Project_Greenhouse\Debug\BrowseInfo\main.xcl |  $
+C$:\Users\Sandyoho\OneDrive\Skrivbord\Project_Greenhouse\Project_Greenhouse\Project_Greenhouse\main.c
+  flags = -out=C$:\Users\Sandyoho\OneDrive\Skrivbord\Project_Greenhouse\Project_Greenhouse\Project_Greenhouse\Debug\BrowseInfo\main.pbi -f C$:\Users\Sandyoho\OneDrive\Skrivbord\Project_Greenhouse\Project_Greenhouse\Project_Greenhouse\Debug\BrowseInfo\main.xcl
+
+build C$:\Users\Sandyoho\OneDrive\Skrivbord\Project_Greenhouse\Project_Greenhouse\Project_Greenhouse\Debug\BrowseInfo\menu.pbi : INDEXER C$:\Users\Sandyoho\OneDrive\Skrivbord\Project_Greenhouse\Project_Greenhouse\Project_Greenhouse\Debug\BrowseInfo\menu.xcl |  $
+C$:\Users\Sandyoho\OneDrive\Skrivbord\Project_Greenhouse\Project_Greenhouse\Project_Greenhouse\menu.c
+  flags = -out=C$:\Users\Sandyoho\OneDrive\Skrivbord\Project_Greenhouse\Project_Greenhouse\Project_Greenhouse\Debug\BrowseInfo\menu.pbi -f C$:\Users\Sandyoho\OneDrive\Skrivbord\Project_Greenhouse\Project_Greenhouse\Project_Greenhouse\Debug\BrowseInfo\menu.xcl
+
+build C$:\Users\Sandyoho\OneDrive\Skrivbord\Project_Greenhouse\Project_Greenhouse\Project_Greenhouse\Debug\BrowseInfo\sensor.pbi : INDEXER C$:\Users\Sandyoho\OneDrive\Skrivbord\Project_Greenhouse\Project_Greenhouse\Project_Greenhouse\Debug\BrowseInfo\sensor.xcl |  $
+C$:\Users\Sandyoho\OneDrive\Skrivbord\Project_Greenhouse\Project_Greenhouse\Project_Greenhouse\sensor.c
+  flags = -out=C$:\Users\Sandyoho\OneDrive\Skrivbord\Project_Greenhouse\Project_Greenhouse\Project_Greenhouse\Debug\BrowseInfo\sensor.pbi -f C$:\Users\Sandyoho\OneDrive\Skrivbord\Project_Greenhouse\Project_Greenhouse\Project_Greenhouse\Debug\BrowseInfo\sensor.xcl
+
+build C$:\Users\Sandyoho\OneDrive\Skrivbord\Project_Greenhouse\Project_Greenhouse\Project_Greenhouse\Debug\BrowseInfo\startup_sam3x.pbi : INDEXER C$:\Users\Sandyoho\OneDrive\Skrivbord\Project_Greenhouse\Project_Greenhouse\Project_Greenhouse\Debug\BrowseInfo\startup_sam3x.xcl |  $
+C$:\Users\Sandyoho\OneDrive\Skrivbord\Project_Greenhouse\Project_Greenhouse\Project_Greenhouse\startup_sam3x.c
+  flags = -out=C$:\Users\Sandyoho\OneDrive\Skrivbord\Project_Greenhouse\Project_Greenhouse\Project_Greenhouse\Debug\BrowseInfo\startup_sam3x.pbi -f C$:\Users\Sandyoho\OneDrive\Skrivbord\Project_Greenhouse\Project_Greenhouse\Project_Greenhouse\Debug\BrowseInfo\startup_sam3x.xcl
+
+build C$:\Users\Sandyoho\OneDrive\Skrivbord\Project_Greenhouse\Project_Greenhouse\Project_Greenhouse\Debug\BrowseInfo\system_sam3x.pbi : INDEXER C$:\Users\Sandyoho\OneDrive\Skrivbord\Project_Greenhouse\Project_Greenhouse\Project_Greenhouse\Debug\BrowseInfo\system_sam3x.xcl |  $
+C$:\Users\Sandyoho\OneDrive\Skrivbord\Project_Greenhouse\Project_Greenhouse\Project_Greenhouse\system_sam3x.c
+  flags = -out=C$:\Users\Sandyoho\OneDrive\Skrivbord\Project_Greenhouse\Project_Greenhouse\Project_Greenhouse\Debug\BrowseInfo\system_sam3x.pbi -f C$:\Users\Sandyoho\OneDrive\Skrivbord\Project_Greenhouse\Project_Greenhouse\Project_Greenhouse\Debug\BrowseInfo\system_sam3x.xcl
+
+build C$:\Users\Sandyoho\OneDrive\Skrivbord\Project_Greenhouse\Project_Greenhouse\Project_Greenhouse\Debug\BrowseInfo\Project_GH.pbw : MAKEBROWSE C$:\Users\Sandyoho\OneDrive\Skrivbord\Project_Greenhouse\Project_Greenhouse\Project_Greenhouse\Debug\BrowseInfo\Project_GH.pbd
+  flags = C$:\Users\Sandyoho\OneDrive\Skrivbord\Project_Greenhouse\Project_Greenhouse\Project_Greenhouse\Debug\BrowseInfo\Project_GH.pbd -output C$:\Users\Sandyoho\OneDrive\Skrivbord\Project_Greenhouse\Project_Greenhouse\Project_Greenhouse\Debug\BrowseInfo\Project_GH.pbw
+
+build C$:\Users\Sandyoho\OneDrive\Skrivbord\Project_Greenhouse\Project_Greenhouse\Project_Greenhouse\Debug\BrowseInfo\Project_GH_part0.pbi : PDBLINK C$:\Users\Sandyoho\OneDrive\Skrivbord\Project_Greenhouse\Project_Greenhouse\Project_Greenhouse\Debug\BrowseInfo\config.pbi |  $
+C$:\Users\Sandyoho\OneDrive\Skrivbord\Project_Greenhouse\Project_Greenhouse\Project_Greenhouse\Debug\BrowseInfo\datetime.pbi $
+C$:\Users\Sandyoho\OneDrive\Skrivbord\Project_Greenhouse\Project_Greenhouse\Project_Greenhouse\Debug\BrowseInfo\display.pbi
+  flags = -M C$:\Users\Sandyoho\OneDrive\Skrivbord\Project_Greenhouse\Project_Greenhouse\Project_Greenhouse\Debug\BrowseInfo\Project_GH_part0.pbi C$:\Users\Sandyoho\OneDrive\Skrivbord\Project_Greenhouse\Project_Greenhouse\Project_Greenhouse\Debug\BrowseInfo\config.pbi C$:\Users\Sandyoho\OneDrive\Skrivbord\Project_Greenhouse\Project_Greenhouse\Project_Greenhouse\Debug\BrowseInfo\datetime.pbi C$:\Users\Sandyoho\OneDrive\Skrivbord\Project_Greenhouse\Project_Greenhouse\Project_Greenhouse\Debug\BrowseInfo\display.pbi
+
+build C$:\Users\Sandyoho\OneDrive\Skrivbord\Project_Greenhouse\Project_Greenhouse\Project_Greenhouse\Debug\BrowseInfo\Project_GH_part1.pbi : PDBLINK C$:\Users\Sandyoho\OneDrive\Skrivbord\Project_Greenhouse\Project_Greenhouse\Project_Greenhouse\Debug\BrowseInfo\exceptions.pbi |  $
+C$:\Users\Sandyoho\OneDrive\Skrivbord\Project_Greenhouse\Project_Greenhouse\Project_Greenhouse\Debug\BrowseInfo\handlers.pbi $
+C$:\Users\Sandyoho\OneDrive\Skrivbord\Project_Greenhouse\Project_Greenhouse\Project_Greenhouse\Debug\BrowseInfo\keypad.pbi
+  flags = -M C$:\Users\Sandyoho\OneDrive\Skrivbord\Project_Greenhouse\Project_Greenhouse\Project_Greenhouse\Debug\BrowseInfo\Project_GH_part1.pbi C$:\Users\Sandyoho\OneDrive\Skrivbord\Project_Greenhouse\Project_Greenhouse\Project_Greenhouse\Debug\BrowseInfo\exceptions.pbi C$:\Users\Sandyoho\OneDrive\Skrivbord\Project_Greenhouse\Project_Greenhouse\Project_Greenhouse\Debug\BrowseInfo\handlers.pbi C$:\Users\Sandyoho\OneDrive\Skrivbord\Project_Greenhouse\Project_Greenhouse\Project_Greenhouse\Debug\BrowseInfo\keypad.pbi
+
+build C$:\Users\Sandyoho\OneDrive\Skrivbord\Project_Greenhouse\Project_Greenhouse\Project_Greenhouse\Debug\BrowseInfo\Project_GH_part2.pbi : PDBLINK C$:\Users\Sandyoho\OneDrive\Skrivbord\Project_Greenhouse\Project_Greenhouse\Project_Greenhouse\Debug\BrowseInfo\main.pbi |  $
+C$:\Users\Sandyoho\OneDrive\Skrivbord\Project_Greenhouse\Project_Greenhouse\Project_Greenhouse\Debug\BrowseInfo\menu.pbi $
+C$:\Users\Sandyoho\OneDrive\Skrivbord\Project_Greenhouse\Project_Greenhouse\Project_Greenhouse\Debug\BrowseInfo\sensor.pbi
+  flags = -M C$:\Users\Sandyoho\OneDrive\Skrivbord\Project_Greenhouse\Project_Greenhouse\Project_Greenhouse\Debug\BrowseInfo\Project_GH_part2.pbi C$:\Users\Sandyoho\OneDrive\Skrivbord\Project_Greenhouse\Project_Greenhouse\Project_Greenhouse\Debug\BrowseInfo\main.pbi C$:\Users\Sandyoho\OneDrive\Skrivbord\Project_Greenhouse\Project_Greenhouse\Project_Greenhouse\Debug\BrowseInfo\menu.pbi C$:\Users\Sandyoho\OneDrive\Skrivbord\Project_Greenhouse\Project_Greenhouse\Project_Greenhouse\Debug\BrowseInfo\sensor.pbi
+
+build C$:\Users\Sandyoho\OneDrive\Skrivbord\Project_Greenhouse\Project_Greenhouse\Project_Greenhouse\Debug\BrowseInfo\Project_GH_part3.pbi : PDBLINK C$:\Users\Sandyoho\OneDrive\Skrivbord\Project_Greenhouse\Project_Greenhouse\Project_Greenhouse\Debug\BrowseInfo\startup_sam3x.pbi |  $
+C$:\Users\Sandyoho\OneDrive\Skrivbord\Project_Greenhouse\Project_Greenhouse\Project_Greenhouse\Debug\BrowseInfo\system_sam3x.pbi
+  flags = -M C$:\Users\Sandyoho\OneDrive\Skrivbord\Project_Greenhouse\Project_Greenhouse\Project_Greenhouse\Debug\BrowseInfo\Project_GH_part3.pbi C$:\Users\Sandyoho\OneDrive\Skrivbord\Project_Greenhouse\Project_Greenhouse\Project_Greenhouse\Debug\BrowseInfo\startup_sam3x.pbi C$:\Users\Sandyoho\OneDrive\Skrivbord\Project_Greenhouse\Project_Greenhouse\Project_Greenhouse\Debug\BrowseInfo\system_sam3x.pbi
+
+build C$:\Users\Sandyoho\OneDrive\Skrivbord\Project_Greenhouse\Project_Greenhouse\Project_Greenhouse\Debug\BrowseInfo\Project_GH.pbd : PDBLINK C$:\Users\Sandyoho\OneDrive\Skrivbord\Project_Greenhouse\Project_Greenhouse\Project_Greenhouse\Debug\BrowseInfo\Project_GH_part0.pbi |  $
+C$:\Users\Sandyoho\OneDrive\Skrivbord\Project_Greenhouse\Project_Greenhouse\Project_Greenhouse\Debug\BrowseInfo\Project_GH_part1.pbi $
+C$:\Users\Sandyoho\OneDrive\Skrivbord\Project_Greenhouse\Project_Greenhouse\Project_Greenhouse\Debug\BrowseInfo\Project_GH_part2.pbi $
+C$:\Users\Sandyoho\OneDrive\Skrivbord\Project_Greenhouse\Project_Greenhouse\Project_Greenhouse\Debug\BrowseInfo\Project_GH_part3.pbi
+  flags = -M C$:\Users\Sandyoho\OneDrive\Skrivbord\Project_Greenhouse\Project_Greenhouse\Project_Greenhouse\Debug\BrowseInfo\Project_GH.pbd C$:\Users\Sandyoho\OneDrive\Skrivbord\Project_Greenhouse\Project_Greenhouse\Project_Greenhouse\Debug\BrowseInfo\Project_GH_part0.pbi C$:\Users\Sandyoho\OneDrive\Skrivbord\Project_Greenhouse\Project_Greenhouse\Project_Greenhouse\Debug\BrowseInfo\Project_GH_part1.pbi C$:\Users\Sandyoho\OneDrive\Skrivbord\Project_Greenhouse\Project_Greenhouse\Project_Greenhouse\Debug\BrowseInfo\Project_GH_part2.pbi C$:\Users\Sandyoho\OneDrive\Skrivbord\Project_Greenhouse\Project_Greenhouse\Project_Greenhouse\Debug\BrowseInfo\Project_GH_part3.pbi
+

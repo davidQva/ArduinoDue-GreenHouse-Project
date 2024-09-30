@@ -1,0 +1,46 @@
+# ninja log v5
+0	153	6946350008388035	C:/Users/Sandyoho/OneDrive/Skrivbord/Proj_sim_menu (1)/Proj_sim_menu/Proj_sim_menu/Debug/Obj/exceptions.o	10706887f67b5bcb
+11	282	6946350009902978	C:/Users/Sandyoho/OneDrive/Skrivbord/Proj_sim_menu (1)/Proj_sim_menu/Proj_sim_menu/Debug/Obj/main.o	347ec4e755d87bbc
+17	183	6946350008786705	C:/Users/Sandyoho/OneDrive/Skrivbord/Proj_sim_menu (1)/Proj_sim_menu/Proj_sim_menu/Debug/Obj/startup_sam3x.o	a3cef5d476be44b8
+4	190	6946350008966115	C:/Users/Sandyoho/OneDrive/Skrivbord/Proj_sim_menu (1)/Proj_sim_menu/Proj_sim_menu/Debug/Obj/datetime.o	dce28c0a9b3f3b03
+8	204	6946350009035868	C:/Users/Sandyoho/OneDrive/Skrivbord/Proj_sim_menu (1)/Proj_sim_menu/Proj_sim_menu/Debug/Obj/keypad.o	7cc704ea6f8279e7
+208	224	6946350009414605	C:/Users/Sandyoho/OneDrive/Skrivbord/Proj_sim_menu (1)/Proj_sim_menu/Proj_sim_menu/Debug/Obj/cstartup.o	1ee107bdf386585
+6	257	6946350009683712	C:/Users/Sandyoho/OneDrive/Skrivbord/Proj_sim_menu (1)/Proj_sim_menu/Proj_sim_menu/Debug/Obj/display.o	6ed4e766eea54fc9
+2	261	6946350009514278	C:/Users/Sandyoho/OneDrive/Skrivbord/Proj_sim_menu (1)/Proj_sim_menu/Proj_sim_menu/Debug/Obj/handlers.o	af5559ce8cdda4ab
+156	271	6946350009783463	C:/Users/Sandyoho/OneDrive/Skrivbord/Proj_sim_menu (1)/Proj_sim_menu/Proj_sim_menu/Debug/Obj/system_sam3x.o	3efa3a22181178f2
+188	279	6946350009873077	C:/Users/Sandyoho/OneDrive/Skrivbord/Proj_sim_menu (1)/Proj_sim_menu/Proj_sim_menu/Debug/Obj/sensor.o	1d9d5e717c66e46f
+193	295	6946350010082375	C:/Users/Sandyoho/OneDrive/Skrivbord/Proj_sim_menu (1)/Proj_sim_menu/Proj_sim_menu/Debug/Obj/config.o	d3bdaa7d1ed12867
+14	322	6946350010142175	C:/Users/Sandyoho/OneDrive/Skrivbord/Proj_sim_menu (1)/Proj_sim_menu/Proj_sim_menu/Debug/Obj/menu.o	acf1bb6c9d43ee89
+326	380	6946350010920141	C:/Users/Sandyoho/OneDrive/Skrivbord/Proj_sim_menu (1)/Proj_sim_menu/Proj_sim_menu/Debug/Exe/Project_GH.out	e0cc82f4b78dcb00
+1	202	6946352463751004	C:/Users/Sandyoho/OneDrive/Skrivbord/Proj_sim_menu (1)/Proj_sim_menu/Proj_sim_menu/Debug/Obj/config.o	d3bdaa7d1ed12867
+9	206	6946352463751004	C:/Users/Sandyoho/OneDrive/Skrivbord/Proj_sim_menu (1)/Proj_sim_menu/Proj_sim_menu/Debug/Obj/sensor.o	1d9d5e717c66e46f
+5	209	6946352463820775	C:/Users/Sandyoho/OneDrive/Skrivbord/Proj_sim_menu (1)/Proj_sim_menu/Proj_sim_menu/Debug/Obj/display.o	6ed4e766eea54fc9
+7	211	6946352463820775	C:/Users/Sandyoho/OneDrive/Skrivbord/Proj_sim_menu (1)/Proj_sim_menu/Proj_sim_menu/Debug/Obj/main.o	347ec4e755d87bbc
+10	235	6946352464129737	C:/Users/Sandyoho/OneDrive/Skrivbord/Proj_sim_menu (1)/Proj_sim_menu/Proj_sim_menu/Debug/Obj/menu.o	acf1bb6c9d43ee89
+237	289	6946352464657880	C:/Users/Sandyoho/OneDrive/Skrivbord/Proj_sim_menu (1)/Proj_sim_menu/Proj_sim_menu/Debug/Exe/Project_GH.out	e0cc82f4b78dcb00
+8	29	6946354746799098	C:/Users/Sandyoho/OneDrive/Skrivbord/Project_greenhouse/Project_Greenhouse/Project_Greenhouse/Debug/Obj/cstartup.o	431ef79a9c907251
+20	218	6946354748641878	C:/Users/Sandyoho/OneDrive/Skrivbord/Project_greenhouse/Project_Greenhouse/Project_Greenhouse/Debug/Obj/exceptions.o	eb523e8d60dd9c9c
+31	254	6946354749000680	C:/Users/Sandyoho/OneDrive/Skrivbord/Project_greenhouse/Project_Greenhouse/Project_Greenhouse/Debug/Obj/keypad.o	9efda2de6fcc5ed1
+17	276	6946354749209978	C:/Users/Sandyoho/OneDrive/Skrivbord/Project_greenhouse/Project_Greenhouse/Project_Greenhouse/Debug/Obj/handlers.o	55604eb36cba9338
+6	292	6946354749259820	C:/Users/Sandyoho/OneDrive/Skrivbord/Project_greenhouse/Project_Greenhouse/Project_Greenhouse/Debug/Obj/config.o	cd8878c708277727
+22	296	6946354749369443	C:/Users/Sandyoho/OneDrive/Skrivbord/Project_greenhouse/Project_Greenhouse/Project_Greenhouse/Debug/Obj/main.o	11f389c259fa9cf7
+1	307	6946354749508983	C:/Users/Sandyoho/OneDrive/Skrivbord/Project_greenhouse/Project_Greenhouse/Project_Greenhouse/Debug/Obj/datetime.o	eb71468b7ebd4735
+11	310	6946354749339549	C:/Users/Sandyoho/OneDrive/Skrivbord/Project_greenhouse/Project_Greenhouse/Project_Greenhouse/Debug/Obj/display.o	671651230683718
+222	320	6946354749678419	C:/Users/Sandyoho/OneDrive/Skrivbord/Project_greenhouse/Project_Greenhouse/Project_Greenhouse/Debug/Obj/startup_sam3x.o	cf9be7b141817eba
+24	323	6946354749658481	C:/Users/Sandyoho/OneDrive/Skrivbord/Project_greenhouse/Project_Greenhouse/Project_Greenhouse/Debug/Obj/menu.o	7cd94d8b0303e48b
+258	357	6946354750052222	C:/Users/Sandyoho/OneDrive/Skrivbord/Project_greenhouse/Project_Greenhouse/Project_Greenhouse/Debug/Obj/system_sam3x.o	686254c152da508c
+281	375	6946354750231622	C:/Users/Sandyoho/OneDrive/Skrivbord/Project_greenhouse/Project_Greenhouse/Project_Greenhouse/Debug/Obj/sensor.o	f02d9196949fdec0
+377	430	6946354750776333	C:/Users/Sandyoho/OneDrive/Skrivbord/Project_greenhouse/Project_Greenhouse/Project_Greenhouse/Debug/Exe/Project_GH.out	36f25a41cd2132ac
+4	19	6946356513414290	C:/Users/Sandyoho/OneDrive/Skrivbord/Project_Greenhouse/Project_Greenhouse/Project_Greenhouse/Debug/Obj/cstartup.o	a89ed4dff79e9d5b
+6	70	6946356513922593	C:/Users/Sandyoho/OneDrive/Skrivbord/Project_Greenhouse/Project_Greenhouse/Project_Greenhouse/Debug/Obj/exceptions.o	c18394dadd648925
+0	124	6946356514430899	C:/Users/Sandyoho/OneDrive/Skrivbord/Project_Greenhouse/Project_Greenhouse/Project_Greenhouse/Debug/Obj/config.o	2f352ba2d6e0aa07
+3	138	6946356514520592	C:/Users/Sandyoho/OneDrive/Skrivbord/Project_Greenhouse/Project_Greenhouse/Project_Greenhouse/Debug/Obj/datetime.o	ef7e328e3995b9c0
+13	145	6946356514520592	C:/Users/Sandyoho/OneDrive/Skrivbord/Project_Greenhouse/Project_Greenhouse/Project_Greenhouse/Debug/Obj/keypad.o	3dd811b4645b25af
+8	156	6946356514759796	C:/Users/Sandyoho/OneDrive/Skrivbord/Project_Greenhouse/Project_Greenhouse/Project_Greenhouse/Debug/Obj/handlers.o	98a573005b9ed981
+73	170	6946356514899324	C:/Users/Sandyoho/OneDrive/Skrivbord/Project_Greenhouse/Project_Greenhouse/Project_Greenhouse/Debug/Obj/startup_sam3x.o	9282632a04ce57bb
+15	180	6946356514949156	C:/Users/Sandyoho/OneDrive/Skrivbord/Project_Greenhouse/Project_Greenhouse/Project_Greenhouse/Debug/Obj/display.o	d2b23089696340a8
+21	204	6946356515248161	C:/Users/Sandyoho/OneDrive/Skrivbord/Project_Greenhouse/Project_Greenhouse/Project_Greenhouse/Debug/Obj/main.o	9f5452a2e8e3ffdf
+128	213	6946356515347832	C:/Users/Sandyoho/OneDrive/Skrivbord/Project_Greenhouse/Project_Greenhouse/Project_Greenhouse/Debug/Obj/system_sam3x.o	a217990fe730cac9
+10	216	6946356515327895	C:/Users/Sandyoho/OneDrive/Skrivbord/Project_Greenhouse/Project_Greenhouse/Project_Greenhouse/Debug/Obj/menu.o	b16788c5e459c39e
+142	241	6946356515626895	C:/Users/Sandyoho/OneDrive/Skrivbord/Project_Greenhouse/Project_Greenhouse/Project_Greenhouse/Debug/Obj/sensor.o	51da95e09f014409
+244	288	6946356516085360	C:/Users/Sandyoho/OneDrive/Skrivbord/Project_Greenhouse/Project_Greenhouse/Project_Greenhouse/Debug/Exe/Project_GH.out	3701f0237d88d44c
